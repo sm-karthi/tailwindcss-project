@@ -22,6 +22,56 @@
     </div>
 
 
+    <div id="ai-chat-btn"
+        class="flex items-center justify-center p-3 rounded-full bg-lightGreen shadow-lg cursor-pointer fixed right-3 bottom-5 z-30 hover:bg-green duration-300">
+
+        <img src="../../images/icon-aiChat.png" class="w-5">
+    </div>
+
+
+    <div id="ai-chat"
+        class="flex flex-col justify-between w-full h-full fixed rounded-lg bg-white shadow-xl z-50 md:w-300 md:h-450 md:right-3 md:bottom-5"
+        style="display: none;">
+
+
+        <div class="flex flex-col justify-evenly space-y-2">
+
+            <div class="flex flex-row items-center justify-between p-3 bg-lightGreen rounded-t-lg">
+                <div class="flex flex-row items-center space-x-3">
+                    <img src="../../images/icon-aiChat.png" alt="AI Icon" class="w-5 h-5" />
+                    <h5 class="text-sm font-semibold text-green">AI Assistant</h5>
+                </div>
+
+                <span id="ai-closeBtn" class="font-bold text-green cursor-pointer">X</span>
+            </div>
+
+            <div class="flex flex-row p-3 space-x-3 text-sm">
+                <h5 class="mt-3 text-green">You</h5>
+                <span class="bg-lightGreen px-2 py-1 shadow-md rounded-md">Hi</span>
+            </div>
+
+
+            <div class="flex flex-row p-3 space-x-3 text-sm ml-16">
+                <span class="bg-lightGreen px-2 py-1 shadow-md rounded-md">Hello! How can I assist you with your
+                    educational questions or topics today?</span>
+                <h5 class="mt-12 text-green">AI</h5>
+            </div>
+
+        </div>
+
+
+        <div class="flex flex-row items-center px-3 py-1 justify-between border-t-2 border-t-gray-500">
+
+            <input type="text" placeholder="Type your question here..."
+                class="mb-5 text-sm border border-none focus:outline-none">
+
+            <img src="../../images/icon-send.png" class="w-6">
+
+        </div>
+
+    </div>
+
+
     <div class="flex flex-row min-h-screen ">
 
         <button id="close-button" class="absolute top-4 left-60 z-50 text-xl px-2 py-1 text-gray-700 md:hidden hidden">
@@ -225,7 +275,8 @@
                                     <h5 class="font-bold">Cloned paper event</h5>
                                     <p class="text-xs text-gray-400">April 16th, 2025 at 12:52 PM</p>
 
-                                    <div class="bg-lightGreen px-2 py-1 mt-3 shadow w-40 rounded-lg text-green ">PAPER SUBMISSION
+                                    <div class="bg-lightGreen px-2 py-1 mt-3 shadow w-40 rounded-lg text-green ">PAPER
+                                        SUBMISSION
                                     </div>
                                 </div>
 
@@ -284,7 +335,7 @@
                     </div>
 
 
-                     <div class="grid grid-cols-7 text-xs font-light text-gray-500 mt-3 ml-5 gap-3">
+                    <div class="grid grid-cols-7 text-xs font-light text-gray-500 mt-3 ml-5 gap-3">
                         <span>11</span>
                         <span>12</span>
                         <span>13</span>
@@ -295,18 +346,19 @@
                     </div>
 
 
-                     <div class="grid grid-cols-7 text-xs font-light text-gray-500 mt-3 ml-5 gap-3">
+                    <div class="grid grid-cols-7 text-xs font-light text-gray-500 mt-3 ml-5 gap-3">
                         <span>18</span>
                         <span>19</span>
                         <span>20</span>
-                        <span class="bg-gray-500 text-white rounded-full text-center mr-6 py-0.5 md:p-0.5 md:mr-0 font-semibold">21</span>
+                        <span
+                            class="bg-gray-500 text-white rounded-full text-center mr-6 py-0.5 md:p-0.5 md:mr-0 font-semibold">21</span>
                         <span class="font-semibold">22</span>
                         <span class="font-semibold">23</span>
                         <span class="font-semibold">24</span>
                     </div>
 
 
-                     <div class="grid grid-cols-7 text-xs font-light text-gray-500 mt-3 ml-5 gap-3">
+                    <div class="grid grid-cols-7 text-xs font-light text-gray-500 mt-3 ml-5 gap-3">
                         <span class="font-semibold">25</span>
                         <span class="font-semibold">26</span>
                         <span class="font-semibold">27</span>

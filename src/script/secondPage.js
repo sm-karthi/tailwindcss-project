@@ -60,12 +60,13 @@ sidebarLetters.forEach((letter) => {
 
     letter.addEventListener("click", () => {
 
-        if (letter.innerText = "All Courses") {
+        if (letter.innerText === "All Courses") {
             window.location.href = "../../index.html"
         }
-        else {
+        else if(letter.innerText === "Events/Competition"){
             window.location.href = `../../src/pages/secondpage.html?value=${letter.innerText}`;
         }
+        
 
     });
 });
@@ -153,3 +154,18 @@ document.addEventListener("DOMContentLoaded", function () {
         }
     });
 });
+
+
+let aiChatBtn = document.getElementById("ai-chat-btn");
+
+let aiChat = document.getElementById("ai-chat");
+
+let aiCloseBtn = document.getElementById("ai-closeBtn");
+
+aiChatBtn.addEventListener("click", () =>{
+    aiChat.style.display = "flex";
+});
+
+aiCloseBtn.addEventListener("click", () =>{
+    aiChat.style.display = "none";
+})
