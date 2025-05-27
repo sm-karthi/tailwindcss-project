@@ -11,7 +11,7 @@
 
 <body class="overflow-x-hidden">
 
-    <button id="menu-button" class="fixed top-4 left-4 z-50 bg-white border rounded p-2 shadow md:hidden">
+    <button id="menu-button" class="absolute top-4 left-4 z-50 bg-white border rounded p-2 shadow md:hidden">
         <svg class="w-6 h-6 text-gray-700" fill="none" stroke="currentColor" viewBox="0 0 24 24"
             xmlns="http://www.w3.org/2000/svg">
             <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16" />
@@ -74,7 +74,7 @@
 
     <div class="flex flex-row min-h-screen ">
 
-        <button id="close-button" class="absolute top-4 left-60 z-50 text-xl px-2 py-1 text-gray-700 md:hidden hidden">
+        <button id="close-button" class="fixed top-4 left-60 z-50 text-xl px-2 py-1 text-white md:hidden hidden">
             &times;
         </button>
 
@@ -219,7 +219,9 @@
                                     <h5 class="font-bold">Sample quiz event cloned</h5>
                                     <p class="text-xs text-gray-400">May 12th, 2025 at 11:58 AM</p>
 
-                                    <div class="bg-lightGreen px-2 py-1 mt-3 shadow w-14 rounded-lg text-green ">QUIZ
+                                    <div
+                                        class="bg-lightGreen px-2 py-1 mt-3 shadow w-14 rounded-lg text-green text-sm font-semibold">
+                                        QUIZ
                                     </div>
                                 </div>
 
@@ -248,7 +250,9 @@
                                     <h5 class="font-bold">Cloned quiz</h5>
                                     <p class="text-xs text-gray-400">April 24th, 2025 at 12:50 PM</p>
 
-                                    <div class="bg-lightGreen px-2 py-1 mt-3 shadow w-14 rounded-lg text-green ">QUIZ
+                                    <div
+                                        class="bg-lightGreen px-2 py-1 mt-3 shadow w-14 rounded-lg text-green text-sm font-semibold">
+                                        QUIZ
                                     </div>
                                 </div>
 
@@ -275,7 +279,9 @@
                                     <h5 class="font-bold">Cloned paper event</h5>
                                     <p class="text-xs text-gray-400">April 16th, 2025 at 12:52 PM</p>
 
-                                    <div class="bg-lightGreen px-2 py-1 mt-3 shadow w-40 rounded-lg text-green ">PAPER
+                                    <div
+                                        class="bg-lightGreen px-2 py-1 mt-3 shadow w-40 rounded-lg text-green text-sm font-semibold">
+                                        PAPER
                                         SUBMISSION
                                     </div>
                                 </div>
@@ -358,14 +364,14 @@
                     </div>
 
 
-                    <div class="grid grid-cols-7 text-xs font-light text-gray-500 mt-3 ml-5 gap-3">
-                        <span class="font-semibold">25</span>
-                        <span class="font-semibold">26</span>
-                        <span class="font-semibold">27</span>
-                        <span class="font-semibold">28</span>
-                        <span class="font-semibold">29</span>
-                        <span class="font-semibold">30</span>
-                        <span class="font-semibold">31</span>
+                    <div class="grid grid-cols-7 text-xs font-semibold text-gray-500 mt-3 ml-5 gap-3">
+                        <span>25</span>
+                        <span>26</span>
+                        <span>27</span>
+                        <span>28</span>
+                        <span>29</span>
+                        <span>30</span>
+                        <span>31</span>
                     </div>
 
                 </div>

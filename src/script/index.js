@@ -101,7 +101,7 @@ document.addEventListener('DOMContentLoaded', () => {
 
 
 
-let sidebarLetters = document.querySelectorAll(".sidebarLetter h5");
+let sidebarLetters = document.querySelectorAll(".sidebarLetter");
 
 sidebarLetters.forEach((letter) => {
 
