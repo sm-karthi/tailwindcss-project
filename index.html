@@ -13,12 +13,12 @@
             display: none;
         }
 
-
         .no-scrollbar {
             -ms-overflow-style: none;
             scrollbar-width: none;
         }
     </style>
+
 
 </head>
 
@@ -88,7 +88,7 @@
 
 
 
-    <div class="flex flex-row max-h-screen overflow-y-hidden">
+    <div class="flex flex-row h-screen bg-gray-50 overflow-y-hidden">
 
         <button id="close-button" class="fixed top-4 left-60 z-50 text-xl px-2 py-1 text-white md:hidden hidden">
             &times;
@@ -194,7 +194,7 @@
 
 
 
-                <div class="w-full py-5 px-4 border-b border-b-gray-400 content">
+                <div class="w-full py-5 px-4 bg-white border-b border-b-gray-400 content">
 
 
                     <div class="flex flex-col gap-3 lg:flex-row lg:items-center lg:justify-between lg:space-x-4">
@@ -237,20 +237,23 @@
 
 
 
-                <div class="flex flex-col bg-gray-50 min-h-screen p-5 content">
+                <div class="flex flex-col p-5">
 
-
-                    <div class="overflow-x-auto no-scrollbar flex justify-start">
-
-                        <div class="flex justify-evenly text-sm space-x-5 tabs">
-                            <h4 class="cursor-pointer">School Practices & Professional Development</h4>
+                    <div class="w-full overflow-x-auto no-scrollbar">
+                        <div class="flex space-x-4 min-w-max px-4 py-2 tabs">
+                            <h4 class="cursor-pointer">School Practices & Professional Development
+                            </h4>
                             <h4 class="cursor-pointer">Classroom Skills/Practices</h4>
                             <h4 class="cursor-pointer">Educational Theory & Policies</h4>
                             <h4 class="cursor-pointer">Subject & Pedagogical knowledge</h4>
                             <h4 class="cursor-pointer">Other</h4>
-
                         </div>
                     </div>
+
+
+
+
+
 
 
 
