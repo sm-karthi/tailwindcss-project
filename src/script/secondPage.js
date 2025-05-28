@@ -14,12 +14,12 @@ closeButton.addEventListener("click", () => {
 
 
 function toggleSidebar() {
-    const sidebar = document.getElementById("sidebar");
-    const menuButton = document.getElementById("menu-button");
-    const closeButton = document.getElementById("close-button");
-    const overlay = document.getElementById("overlay");
+    let sidebar = document.getElementById("sidebar");
+    let menuButton = document.getElementById("menu-button");
+    let closeButton = document.getElementById("close-button");
+    let overlay = document.getElementById("overlay");
 
-    const isHidden = sidebar.classList.contains("hidden");
+    let isHidden = sidebar.classList.contains("hidden");
 
     sidebar.classList.toggle("hidden");
     overlay.classList.toggle("hidden");
@@ -28,10 +28,10 @@ function toggleSidebar() {
 }
 
 window.addEventListener("DOMContentLoaded", () => {
-    const menuButton = document.getElementById("menu-button");
-    const sidebar = document.getElementById("sidebar");
-    const closeButton = document.getElementById("close-button");
-    const overlay = document.getElementById("overlay");
+    let menuButton = document.getElementById("menu-button");
+    let sidebar = document.getElementById("sidebar");
+    let closeButton = document.getElementById("close-button");
+    let overlay = document.getElementById("overlay");
 
     if (sidebar.classList.contains("hidden")) {
         menuButton.classList.remove("hidden");
@@ -43,12 +43,9 @@ window.addEventListener("DOMContentLoaded", () => {
 
 
 
-let courseHeading = document.querySelector(".courseHeading");
 
 let params = new URLSearchParams(window.location.search);
 let value = params.get("value");
-
-courseHeading.innerText = value;
 
 
 
@@ -63,10 +60,10 @@ sidebarLetters.forEach((letter) => {
         if (letter.innerText === "All Courses") {
             window.location.href = "../../index.html"
         }
-        else if(letter.innerText === "Events/Competition"){
+        else if (letter.innerText === "Events/Competition") {
             window.location.href = `../../src/pages/secondpage.html?value=${letter.innerText}`;
         }
-        
+
 
     });
 });
@@ -162,10 +159,10 @@ let aiChat = document.getElementById("ai-chat");
 
 let aiCloseBtn = document.getElementById("ai-closeBtn");
 
-aiChatBtn.addEventListener("click", () =>{
+aiChatBtn.addEventListener("click", () => {
     aiChat.style.display = "flex";
 });
 
-aiCloseBtn.addEventListener("click", () =>{
+aiCloseBtn.addEventListener("click", () => {
     aiChat.style.display = "none";
 })

@@ -116,7 +116,7 @@ sidebarLetters.forEach((letter) => {
         else if (letter.innerText === "Events/Competition") {
             window.location.href = `../../src/pages/secondpage.html?value=${letter.innerText}`;
         }
-        
+
     })
 
 
@@ -130,10 +130,10 @@ let aiChat = document.getElementById("ai-chat");
 
 let aiCloseBtn = document.getElementById("ai-closeBtn");
 
-aiChatBtn.addEventListener("click", () =>{
+aiChatBtn.addEventListener("click", () => {
     aiChat.style.display = "flex";
 });
 
-aiCloseBtn.addEventListener("click", () =>{
+aiCloseBtn.addEventListener("click", () => {
     aiChat.style.display = "none";
 })
